@@ -2,7 +2,7 @@ const friendLists = document.getElementById("friend_list");
 
 
 async function Pencarian(apayangdicari) {
-  let  data = await fetch('./data.json')
+  let  data = await fetch('./data.json1')
   friendLists.innerHTML = ""
   data = await data.json()
   let comp = ""
@@ -28,7 +28,7 @@ const element  = (i) => {
         <figure class="card">
           <div class="card_header">
             <div class="card_image">
-              <img src="${i.fotoselvie}" alt="${i.nama}" width="100%">
+              <img src="${i.fotoformal}" alt="${i.nama}" width="100%">
             </div>
             <div class="card_description">
               <span>${i.nama}</span>
